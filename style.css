@@ -9,7 +9,7 @@
 body {
   margin: 0;
   padding: 0px;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
 }
 
 .spinner {
@@ -120,7 +120,7 @@ nav {
   background: transparent;
   z-index: 1;
   border-bottom: 1px solid #000;
-  background-color: #F7FD04;
+  background-color: #f7fd04;
 }
 
 nav ul {
@@ -149,18 +149,7 @@ nav ul li a:hover {
   transform: scale(0.5);
 }
 
-.homepage {
-  height: 100vh;
-  text-align: center;
-  width: 50;
-  background: url(img/01.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-}
-
-.kolom-1{
+.kolom-1 {
   height: 100vh;
   text-align: center;
   width: 50;
@@ -169,12 +158,12 @@ nav ul li a:hover {
   background-size: cover;
   display: flex;
   align-items: center;
-  font-family: 'Aboreto', cursive;
+  font-family: "Aboreto", cursive;
 }
 
-.kolom-1{
+.kolom-1 {
   text-align: center;
-  color: #F7FD04;
+  color: #f7fd04;
   font-size: 30px;
 }
 
@@ -185,7 +174,6 @@ nav ul li a:hover {
   background-size: cover;
   color: #000000;
 }
-
 
 .photo p {
   align-items: center;
@@ -200,13 +188,12 @@ nav ul li a:hover {
 
 .photo {
   text-align: center;
-  
 }
 
 .photo img {
   width: 300px;
   height: 300px;
-  border: 2px solid #F7FD04;
+  border: 2px solid #f7fd04;
   border-radius: 13px;
   cursor: pointer;
   margin: 10px;
@@ -215,7 +202,7 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.photo img:hover{
+.photo img:hover {
   filter: grayscale(1);
   transform: scale(1.03);
   flex: 5;
@@ -244,7 +231,7 @@ h5 {
   font-size: 20px;
   color: rgb(0, 0, 0);
   text-align: center;
-  background-color: #F7FD04;
+  background-color: #f7fd04;
 }
 
 .social-menu {
@@ -253,7 +240,7 @@ h5 {
   text-align: center;
   display: flex;
   gap: 1rem;
-  background-color: #F7FD04;
+  background-color: #f7fd04;
 }
 
 .social-menu a {
@@ -271,27 +258,27 @@ h5 {
   text-decoration: none;
   z-index: 1;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.social-menu a:hover{
+.social-menu a:hover {
   color: #000;
 }
 
 .social-menu a::before {
-content:'';
-position: absolute;
-top: 0%;
-left: 0%;
-width: 0%;
-height: 100%;
-background: #ff0000;
-z-index: -1;
-transition: .5s;
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  background: #ff0000;
+  z-index: -1;
+  transition: 0.5s;
 }
 
 .social-menu a:hover::before {
-width: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 991.98px) {
