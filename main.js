@@ -1,5 +1,5 @@
 // pop up
-alert("HAI !");
+alert("HELLO WORLD !");
 
 // jam
 const hoursEl = document.getElementById("hour");
