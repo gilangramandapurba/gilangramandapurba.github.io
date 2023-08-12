@@ -33,7 +33,7 @@ body {
 }
 
 .logo a {
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 40px;
   position: relative;
   float: left;
@@ -41,9 +41,9 @@ body {
   transition: all 0, 5s ease;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 760px) {
   .logo a {
-    font-size: 35px;
+    font-size: calc(1rem + 1.5rem);
   }
 }
 
