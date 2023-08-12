@@ -33,7 +33,7 @@ body {
 }
 
 .logo a {
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: 40px;
   position: relative;
   float: left;
@@ -43,7 +43,13 @@ body {
 
 @media only screen and (max-width: 760px) {
   .logo a {
-    font-size: calc(1rem + 1.5rem);
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .logo a {
+    font-size: 20px;
   }
 }
 
