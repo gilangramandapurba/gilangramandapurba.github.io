@@ -6,317 +6,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G ★</title>
     <!-- icon logo -->
-    <link rel="shortcut icon" href="img/G.jpg" type="image/x-icon">
-    <!-- CSS -->
+    <link rel="shortcut icon" href="ada/g.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <!-- gooogle fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mediaqueries.css" />
     <!-- sosmed -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-    <!-- AWAL NAV -->
-    <nav>
-      <div class="wrapper">
-        <div class="spinner"></div>  
-        <div class="logo"><a href=>Gilang Ramanda Purba </a></div>
-        <div class="menu">
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#photo">PHOTO</a></li> 
-                <li><a href="CV.GILANG RAMANDA PURBA.pdf" target='_blank'>CV</a></li>  
-            </ul>
-        </div>
+    <nav id="desktop-nav">
+      <div class="logo">Gilang Ramanda Purba</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#Photography">Photography</a></li>
+          <li><a href="CV.GILANG RAMANDA PURBA.pdf" target='_blank'>CV</a></li> 
+        </ul>
+      </div>
     </nav>
-    <!-- AKHIR NAV -->
-    <!-- AWAL HEADER -->
+    <br>
+    <nav id="hamburger-nav">
+      <div class="logo">Gilang Ramanda Purba</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#Photography" onclick="toggleMenu()">Photography</a></li>
+        </div>
+      </div>
+    </nav>
 
-    <div class="jam">
-      <div class="clock">
-        <div>
-          <span id="hour">00</span>
-          <span class="text">hours</span>
+    <div id="clock"></div>
+    <br>
+
+    <div class="foto">
+      <img src="./ada/pp.jpg" width="150px">
+    </div>
+
+    <div class="bio">
+      <h2>"Whatever it is, never give up and do your best"</h2>
+    </div>
+    
+    <br>
+    <div class="social-menu">
+      <a href="mailto:gramanda35@gmail.com"  target='_blank'><i class='bx bxl-gmail'></i></a>
+      <a href="https://wa.me/081273283614"  target='_blank'><i class='bx bxl-whatsapp'></i></a>
+      <a href="https://www.instagram.com/gilangrpurba/" target='_blank'><i class='bx bxl-instagram'></i></a>
+      <a href="https://www.linkedin.com/in/gilang-ramanda-purba/"target='_blank'><i class='bx bxl-linkedin'></i></a>
+      <a href="https://dribbble.com/GILANG17/"target='_blank'><i class='bx bxl-dribbble'></i></a>
+    </div>
+  
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./ada/asa.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <div>
-          <span id="minutes">00</span>
-          <span class="text">minutes</span>
+        <div class="about-details-container">
+          <div class="text-container">
+            <h2>Hallo !</h2>
+            <p>Perkenalkan saya Gilang Ramanda Purba biasa dipanggil Gilang. Saya merupakan lulusan Sarjana Komputer dengan program studi Sistem Informasi fakultas Ilmu Komputer dari Universitas Bina Darma Palembang dengan ipk 3,37 / 4,00. Pada saat ini saya berusia 24 tahun. Saya lahir dan besar dikota Prabumulih, Sumatera Selatan sampai saat ini. 
+              <br><br>Sebagai lulusan Sarjana Komputer yang bercita-cita tinggi untuk memasuki dunia kerja secara profesional dengan penuh semangat dan keinginan kuat untuk belajar serta berkontribusi secara maksimal. Meskipun saya adalah seorang Fresh Graduate yang minim akan pengalaman, tapi saya akan dapat tumbuh dan dapat dengan mudah berkembang dilingkungan yang cepat dan dinamis.
+              <br><br>Dalam kurikulum pendidikan Sistem Informasi, saya telah mendalami konsep-konsep yang berkaitan dengan manajemen data, analisis bisnis, dan implementasi sistem. Proyek akhir saya, yang fokus pada efisiensi produksi melalui sistem informasi terintegrasi, menunjukkan dedikasi saya terhadap penerapan solusi teknologi untuk meningkatkan proses operasional.
+              <br><br>Saya memiliki pengetahuan dan keterampilan teknis dasar dalam mengoperasikan Microsoft Office, Front End-Developer, Editing Photo, Photography dan Ui/Ux Designer.
+              <br><br>Saya juga memiliki pengalaman diluar dari bidang IT sebagai Quality Assurance PT. SRI REJEKI ISMAN TBK. yang dimana penggunaan teknologi sangat minim digunakan pada saat kerja, yang dimana tugas saya berfokus pada inspeksi kualitas, mengidentifikasi masalah, mengawasi proses produksi, menerapkan tindakan korektif, dan memastikan kepatuhan terhadap standar industri.
+            </p>
+          </div>
         </div>
-        <div>
-          <span id="seconds">00</span>
-          <span class="text">seconds</span>
-        </div>
+      </div>
+    </section>
+
+    <h1 class="title">Riwayat Pendidikan</h1>   
+    <br>
+    <div class="contents">
+      <div class="box">
+        <h4>2017 - 2021</h4>
+        <h5>STRATA SATU UNIVERSITAS BINA DARMA KOTA PALEMBANG JURUSAN SISTEM INFORMASI</h5>
+      </div>
+      <div class="box">
+        <h4>2014 – 2017</h4>
+        <h5>SEKOLAH MENENGAH ATAS NEGERI 07 KOTA PRABUMULIH JURUSAN ILMU PENGETAHUAN SOSIAL</h5>
+      </div>
+      <div class="box">
+        <h4>2011 – 2014</h4>
+        <h5>SEKOLAH MENENGAH PERTAMA NEGERI 05 KOTA PRABUMULIH</h5>
+      </div>
+      <div class="box">
+        <h4>2006 – 2011</h4>
+        <h5>SEKOLAH DASAR NEGERI 56 KOTA PRABUMULIH</h5>
       </div>
     </div>
 
-    <header>
-      <section id="home">
-        <div class="profile">
-          <img src="img/pp.jpg" width="150px">
-          <h1>Gilang Ramanda Purba</h1>
-          <h2>"Whatever it is, never give up and do your best"</h2>
-          <h3>"Bisa Karena Terbiasa"</h3>
-        </div>
-      </section>
-          <div class="social-menu">
-            <a href="mailto:gramanda35@gmail.com"  target='_blank'><i class='bx bxl-gmail'></i></a>
-            <a href="https://wa.me/081273283614"  target='_blank'><i class='bx bxl-whatsapp'></i></a>
-            <a href="https://www.instagram.com/gilangrpurba/" target='_blank'><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.linkedin.com/in/gilang-ramanda-purba/"target='_blank'><i class='bx bxl-linkedin'></i></a>
-          </div>
-    </header>
-    <!-- AKHIR HEADER -->
-    <!-- AWAL CONTENT -->
-      <content>
-        <section id="about">
-          <div class="content">
-            <h1>About Me</h1>
-              <img src="img/001.jpg" >
-                <p>
-                    Hai, perkenalkan saya Gilang Ramanda Purba atau biasa dipanggil Gilang, Saya sendiri memiliki darah keturunan Batak dari Ayah dengan marga Purba. Saat ini saya berusia 24 tahun, Saya merupakan lulusan dari Universitas Bina Darma Palembang dengan program studi Sistem Informasi tahun 2021, dengan fokus dibidang Front-End Developer dan juga Ui/Ux Designer, saya juga memiliki hobi Seni Photography. Saya lahir dan besar dikota Prabumulih, salah satu kota yang terletak diwilayah Provinsi Sumatera Selatan. Kota dengan Motto Seinggok Sepemunyian yang memiliki arti seiya sekata yaitu masyarakat Prabumulih yang serasi, satu tujuan, kompak, akur, dan seiring sejalan.</p>
-          </div>
-            <br>
-          <h1>Riwayat Pendidikan</h1>
-            <div class="contents">
-              <div class="box">
-                <h4>2006 – 2011</h4>
-                <h5>SEKOLAH DASAR NEGERI 56 KOTA PRABUMULIH</h5>
-              </div>
-              <div class="box">
-                <h4>2011 – 2014</h4>
-                <h5>SEKOLAH MENENGAH PERTAMA NEGERI 05 KOTA PRABUMULIH</h5>
-              </div>
-              <div class="box">
-                <h4>2014 – 2017</h4>
-                <h5>SEKOLAH MENENGAH ATAS NEGERI 07 KOTA PRABUMULIH JURUSAN ILMU PENGETAHUAN SOSIAL</h5>
-              </div>
-              <div class="box">
-                <h4>2017 - 2021</h4>
-                <h5>STRATA SATU UNIVERSITAS BINA DARMA PALEMBANG JURUSAN SISTEM INFORMASI</h5>
-              </div>
-            </div>
-            <div class="content">
-              <h1>Pengalaman Kerja</h1>
-              <h4>Quality Assurance - PT Sri Rejeki Isman Tbk (Juli 2022 – Januari 2023)<br></h4>
-              <p>
-                  PT. SRI REJEKI ISMAN TBK. adalah salah satu perusahaan tekstil terbesar di Asia Tenggara. Perusahaan ini memiliki empat jenis produksi, antara lain benang, kain mentah, kain jadi, dan pakaian jadi. Sritex adalah pemasok utama benang berkualitas tinggi bagi pelanggan tekstil global. Perusahaan tekstil ini berlokasi di Jawa Tengah, Indonesia.
-<br>
-Peran dan Tanggung Jawab :
-                <br>
-                - Mampu menyelesaikan target pengecekan 60 pcs produk dengan target waktu 60 menit, <br>
-                - Mampu bekerja secara mandiri maupun berkelompok, <br>
-                - Mengikuti dan melaksanakan standar ISO - 9001 – ISO - 1400, <br>
-                - Melakukan audit kualitas reguler untuk mengevaluasi dan meningkatkan proses produksi, <br>
-                - Mengidentifikasi masalah dan memberikan masukan dengan jelas dan ringkas secara lisan maupun tertulis mengenai produk yang tidak sesuai dengan permintaan costumer atau cacat produksi, <br>
-                - Memastikan semua persyaratan produksi yang telah ditetapkan terpenuhi dengan baik, <br>
-                - Merekomendasikan peningkatan kualitas produksi kepada stakeholders yang ada apabila ada produk yang tidak sesuai dengan permintaan costumer, <br>
-                - Bertanggung jawab dalam proses pengendalian kualitas secara menyeluruh untuk memastikan kepatuhan produk terhadap standar perusahaan, <br>
-                - Memiliki ketelitian dan berorientasi pada detail dengan akurasi tinggi, <br>
-                - Menempelkan status produk, baik pending, reject atau release dengan persetujuan supervisor. <br>
-              </p>
-            </div>
-              <br>
-            <div class="conten">
-              <h1>Keahlian</h1>
-                <img src="img/html.jpg" width="40%"> 
-                <img src="img/f.png" width="30%"> 
-                  <br>
-                  <br>
-              <h1>Fake Project</h1> 
-              
-                <img src="sumsel/SM.jpg" width="100%">
-                  <p> 
-                    Ini adalah Ui Design Fake Project yang saya buat, kali ini saya membuat Ui Design aplikasi mobile app SUMSEL yaitu sebuah aplikasi provinsi Sumatera Selatan yang didesign untuk memenuhi kebutuhan pengguna guna mengetahui provinsi Sumatera Selatan lebih jauh dan mendalam mengenai Sumatera Selatan itu hanya dengan genggaman tangan saja. <br>
-                    Kami sebagai perancang Design aplikasi memiliki tekad yang kuat untuk menciptakan Design yang kuat untuk menciptakan pengalaman digital anda yang memudahkan para pengguna. Design ini memiliki fitur mengenai pemahaman mendalam tentang keuinikan dan potensi yang ada diprovinsi Sumatera Selatan, kami merancang Ui Design yang memadukan keindahan Design dengan Fungsionalitas yang luar biasa, melalui sentuhan para Design yang estetis dan intuitif, kami memperhatikan setiap detail, mulai dari tata letak yang terstruktur hingga ikon – ikon yang mudah dikenali, sehingga para pengguna dapat menjelajahi informasi dari layanan kami ini dengan nyaman. <br>
-                    Dalam merancang Ui Design ini, kami menggabungkan Design yang elegan dengan Fungsionalitas yang unggul. Antarmuka yang kami ciptakan tidak hanya mempesona secara visual, tetapi juga memberikan kesan pengalaman pengguna yang mulus dan intuitif. Kami memilih Design Warna hijau pada Design ini sesuai dengan warna pada logo provinisi Sumatera Selatan, sehingga setiap interaksi pengguna aplikasi dapat merasakan sensasi yang mendalam mengenai provinsi Sumatera Selatan yang erat kaitannya dengan warna hijau dan akan menjadi begitu istimewa dan melekat pada setiap penggunanya. <br>
-                    Aplikasi ini juga diDesign untuk menghadirkan sebuah perjalanan digital yang mendalam mengenai Provinsi Sumatera Selatan, menghubungkan antar pengguna dengan kekayaan budaya, objek wisata, makan khas daerah, dan mengenal kota – kota yang ada diSumatera Selatan. Dengan komitmen dan dedikasi tertinggi kami, kami tidak hanya meciptkan aplikasi design yang unggul, tetapi juga sebuah karya seni digital yang menggugah hati dan memberikan nilai tambah bagi masyrakat luas bukan hanya masyrakat Provinsi Sumatera Selatan saja. <br>
-                    Ayo segera download aplikasi SUMSEL diplaystore atau AppStore kesayangan anda. Dan bergabunglah dengan kami dalam merasakan kemewahan dan kemudahan didalam aplikasi SUMSEL yang kami ciptakan dengan penuh semangat dari kami para perancang aplikasi.
-                  <br>
-                  <br>
-                  </p>
-              <img src="sumsel/1.jpg" width="15%">
-              <img src="sumsel/2.jpg" width="15%">
-              <img src="sumsel/3.jpg" width="15%">
-              <img src="sumsel/4.jpg" width="15%">
-              <img src="sumsel/5.jpg" width="15%">
-              <img src="sumsel/6.jpg" width="15%">
-              <img src="sumsel/7.jpg" width="15%">
-              <img src="sumsel/8.jpg" width="15%">
-              <img src="sumsel/9.jpg" width="15%">
-              <img src="sumsel/10.jpg" width="15%">
-              <img src="sumsel/11.jpg" width="15%">
-              <img src="sumsel/12.jpg" width="15%">
-              <img src="sumsel/13.jpg" width="15%">
-              <img src="sumsel/14.jpg" width="15%">
-              <img src="sumsel/15.jpg" width="15%">
-              <img src="sumsel/16.jpg" width="15%">
-              <br>
-              <br>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <br>
+      <p>
+        PT. SRI REJEKI ISMAN Tbk. atau dikenal dengan Sritex, adalah salah satu perusahaan tekstil terbesar di Indonesia dan Asia Tenggara. Didirikan pada tahun 1966, perusahaan ini berkantor pusat di Solo, Jawa Tengah. Sritex bergerak dalam produksi berbagai jenis tekstil, mulai dari benang, kain, hingga pakaian jadi. Produk-produk Sritex meliputi seragam militer, pakaian kerja, pakaian kasual, dan berbagai produk tekstil lainnya yang dipasarkan baik di dalam negeri maupun internasional. Perusahaan ini dikenal karena integrasi vertikalnya yang mencakup seluruh rantai produksi tekstil, mulai dari pemintalan, tenun, pewarnaan, hingga konfeksi.        <br>
+        <br>
+        Peran dan Tanggung Jawab : <br> <br>
+        - Menyelesaikan target pengecekan 60 pcs produk dengan target waktu 60 menit,<br>
+        - Mampu bekerja mandiri dan kelompok,<br>
+        - Mengikuti dan menerapkan standar ISO - 9001 - ISO - 1400,<br>
+        - Melakukan audit kualitas secara berkala untuk mengevaluasi dan meningkatkan proses produksi,<br>
+        - Mengidentifikasi permasalahan dan memberikan masukan yang jelas dan ringkas secara lisan dan tertulis mengenai produk yang tidak sesuai dengan permintaan pelanggan atau cacat produksi,<br>
+        - Memastikan semua persyaratan produksi yang ditetapkan dipenuhi dengan benar,<br>
+        - Merekomendasikan peningkatan kualitas produksi kepada pemangku kepentingan yang ada jika ada produk yang tidak sesuai dengan permintaan pelanggan,<br>
+        - Bertanggung jawab untuk melaksanakan proses pengendalian kualitas secara keseluruhan untuk memastikan kepatuhan produk terhadap standar perusahaan,<br>
+        - Teliti dan berorientasi pada detail dengan akurasi tinggi,<br>
+        - Mencantumkan status produk, baik tertunda, ditolak, atau dilepaskan dengan persetujuan atasan.<br><br>
+        Keahlian: Mengelola Waktu · Penyelesaian Masalah · Kerjasama Tim · Pengambilan Keputusan · Komunikasi Skill · Qa/Qc · Dispiln · Cekatan · Teliti dan Detail
+        </p>
+    </section>
 
-              <img src="travel/01.jpg" width="100%">
-                <p>
-                  Ini adalah Ui Design Fake Project yang saya buat, kali ini saya membuat Ui Design aplikasi mobile app Travel yaitu sebuah aplikasi penyedia jasa layanan Travel Mobil antar kota didalam provinsi Sumatera Selatan yang bernama GILANG TRAVEL yang didesign untuk memenuhi kebutuhan para pengguna kebutuhan transportasi diprovinsi Sumatera Selatan, hanya dengan menggunakan Aplikasi ini kita lebih mudah dan simple dalam memesan sebuah travel <br>
-                  Kami sebagai perancang Design hadir dengan membuat sebuah Design yang mudah digunakan untuk perjalanan anda dengan lebih mudah dan simple. Aplikasi ini hadir ditengah banyak nya orang – orang yang berpergian keluar kota dengan berbagai macam alasan dan masih menggunakan cara yang lama. <br>
-                  Aplikasi ini dirancang untuk bukan hanya untuk memesan tavel saja tetapi juga didesign untuk memberikan informasi tentang destinias wisata yang ada diSumatera Selatan, aplikasi ini juga bisa menjadi agen kurir barang, penyewaan mobil untuk keluarga, dan bahkan bisa menyewan kegiatan tur sekolah maupun kelompok organisasi. Pihak penyelenggara bekerja sama dengan mitra – mitra terbaik yang ada untuk menyediakan layanan yang terbaik bagi para pengguna. Melalui aplikasi ini, pengguna dapat menjelajahi berbagai opsi perjalanan, membandingkan harga, membaca ulasan dari pengguna lainnya, dan membuat reservasi langsung dengan mudah <br>
-                  Ayo segera download aplikasi GILANG TRAVEL diplaystore atau AppStore kesayangan anda. Dan bergabunglah dengan kami para mitra – mitra terabik dan merasakan kemewahan dan kemudahan aplikasi yang kami ciptakan dengan penuh semangat dan keahlian para Design kami.
-                <br>
-                <br>
-                </p>  
-              <img src="travel/1.jpg" width="15%">
-              <img src="travel/2.jpg" width="15%">
-              <img src="travel/3.jpg" width="15%">
-              <img src="travel/4.jpg" width="15%">
-              <img src="travel/5.jpg" width="15%">
-              <img src="travel/6.jpg" width="15%">
-              <img src="travel/7.jpg" width="15%">
-              <img src="travel/8.jpg" width="15%">
-              <img src="travel/9.jpg" width="15%">
-              <img src="travel/10.jpg" width="15%">
-              <img src="travel/11.jpg" width="15%">
-              <img src="travel/12.jpg" width="15%">
-              <img src="travel/13.jpg" width="15%">
-              <img src="travel/14.jpg" width="15%">
-                <br>
-                <br>
-              
-                <img src="photo/SM.jpg" width="100%">
-                <p>
-                  Ini adalah Ui Design Fake Project yang saya buat, kali ini saya membuat Ui Design aplikasi mobile app penyedian jasa penyewaan kamera DSLR kota Palembang yang beranama GILANG STUDIO yang didesign untuk memenuhi kebutuhan para pengguna kebutuhan para pencinta seni Photography yang ingin menjelajahi dunia visual dengan kemampuan yang lebih tinggi tanpa membeli sebuah kamera. Melalui Design yang inovatif dan intuitif, kami menciptakan Design Ui yang bisa membuat pengalaman dan kesan mewah pada saat membuka aplikasi yang dinamis, praktis, cepat, dan memukau. Aplikasi ini dirancang Design Ui yang memperhatikan setiap detail untuk memberikan pengalaman pengguna yang tak terlupakan. Dari tata letak yang sederhana hingga membuat navigasi yang lancer, setiap bagian dari elemen Design Ui yang kami rancang untuk memastikan kenyamanan dan kepuasan pengguna aplikasi. <br>
-                  Kami memahami bahwa keindahan dunia visual adalah inti dari dunia Photography. Oleh karena itu, kami menyajikan tampilan Design anatrmuka yang menarik, menampilkan gambar – gambar yang menakjubkan dan penempatan konten yang cerdas. Setiap interaksi didalam aplikasi ini kami rancang untuk memperkaya pengalaman pengguna dan menginspirasi kreativitas seni Photography mereka. <br>
-                  Kami sebagai perancang Design Ui memberikan kemudahan bagi pengguna untuk menyesuaikan prefensi mereka dalam mencari sebuah kamera. Dari pilihan jenis model kamera, hingga harga yang ditawarkan, pengguna dapat dengan mudah menemukan kamera yang sesuai dengan kebutuhan dan mendaptkan pengalaman yang berkesan dari Design yang kami rancang. <br>
-                  Keandalan dan keamanan adalah prioritas utama dari layanan kami. Melalui teknologi masa kini, kami memastikan bahwa data pribadi anda akan kami jamin keamannya dan memastikan transaksi sewa kamera akan berjalan dengan lancer dan  informasi pribadi pengguna terlindungi. <br>
-                  Ayo segera download aplikasi GILANG STUDIO diplaystore atau AppStore kesayangan anda. Dan bergabunglah dengan kami dalam merasakan kemewahan dan kemudahan di dalam aplikasi GILANG STUDIO yang kami ciptakan dengan penuh semangat dari kami para perancang aplikasi.
-                <br>
-                <br>
-                </p>
-              <img src="photo/1.jpg" width="15%">
-              <img src="photo/2.jpg" width="15%">
-              <img src="photo/3.jpg" width="15%">
-              <img src="photo/4.jpg" width="15%">
-              <img src="photo/5.jpg" width="15%">
-              <img src="photo/6.jpg" width="15%">
-              <img src="photo/7.jpg" width="15%">
-              <img src="photo/8.jpg" width="15%">
-              <img src="photo/9.jpg" width="15%">
-              <img src="photo/10.jpg" width="15%">
-              <img src="photo/11.jpg" width="15%">
-              <img src="photo/12.jpg" width="15%">
-              <img src="photo/13.jpg" width="15%">
-              <img src="photo/14.jpg" width="15%">
-                <br>
-                <br>
-              
-              <img src="buah/01.jpg" width="100%">
-                <p>
-                  Ini adalah Ui Design Fake Project yang saya buat, kali ini saya membuat Ui Design aplikasi mobile app Fruit Mart Online yaitu sebuah aplikasi jual beli buah online yang terletak diKota Palembang yang berfokus jual beli Online Shop yang diberi nama FRUIT MART GILANG yang didesign untuk memenuhi kebutuhan bagi para pencinta buah – buahan yang meras mager untuk melakukan transkasi belanja keluar, hanya dengan menggunakan Aplikasi ini kita lebih mudah dan simple dalam melakukan transaksi beli buah online.<br>
-                  Kami para perancang Design Ui antarmuka memahami betapa pentingnya kesan pertama yang tak terlupakan saat pertama seorang membuka sebuah aplikasi, oleh Karena itu kami para Design Ui antarmuka telah merancang Design yang memberikan detail dan menawan, dan memperhatikan setiap detail untuk memberikan pengalaman belanja yang memanjakan mata dan pikiran. Dari tata letak yang terogranisir dengan cukup baik dengan ikon – ikon yang kami sediakan sehingga bisa memudahkan para pengguna setiap elemen desain diaplikasikan dengan penuh keahlian untuk menjamin keselarasan dan kenyamanan para pengguna. Melalui perpaduan warna yang cerah dan harmonis, kami menciptkan suasana yang menyegarkan dan menggugah selera. Dengan gambar – gambar buah yang kami tampilan diaplikasi yang diambil secara langsung, kami mengajak para pengguna untuk merasakan sensasi belanja online diaplikasi dengan kesan yang mewah dengan gambar – gambar buah yang segar yang membikin mata para penikmat buah – buahan membuat para pengguna bisa berlama – lama diaplikasi. <br>
-                  Kami juga merancang mengoptimasi yang cerdas dalam penggunaan teknologi terkini, kami memastikan bahwa aplikasi ini berjalan dengan lancar dan responsive diberbagai perangkat. Kecepatan, keandalan, dan kemudahan penggunaan fokus utama kami dalam meciptakan aplikasi yang memuaskan para pengguna. Kami percaya bahwa setiap pembeli memiliki karakter – karakter yang berbeda – beda. Oleh karena itu kami menyediakan opsi personalisasi dalam aplikasi ini. Dari prefensi buah favorit hingga pemberitahuan khusus tentang penawaran menarik. <br>
-                  Ayo segera download aplikasi FRUIT MART GILANG diplaystore atau AppStore kesayangan anda. Dan bergabunglah dengan kami dalam merasakan kemewahan dan kemudahan di dalam aplikasi FRUIT MART GILANG yang kami ciptakan dengan penuh semangat dari kami para perancang aplikasi. 
-                <br>
-                <br>
-                </p>
-              <img src="buah/1.jpg" width="15%">
-              <img src="buah/2.jpg" width="15%">
-              <img src="buah/3.jpg" width="15%">
-              <img src="buah/4.jpg" width="15%">
-              <img src="buah/5.jpg" width="15%">
-              <img src="buah/6.jpg" width="15%">
-              <img src="buah/7.jpg" width="15%">
-              <img src="buah/8.jpg" width="15%">
-              <img src="buah/9.jpg" width="15%">
-              <img src="buah/10.jpg" width="15%">
-              <img src="buah/11.jpg" width="15%">
-              <img src="buah/12.jpg" width="15%">
-              <img src="buah/13.jpg" width="15%">
-              <img src="buah/14.jpg" width="15%">
-              <img src="buah/15.jpg" width="15%">
+    <section id="Photography">
+        <h1 class="title">Photography</h1>
+      <p>Saya adalah seorang yang mencintai dunia Photography. Photography adalah salah satu hobi yang saya jalani dan tekuni hingga saat ini. Photography bagi saya sendiri adalah seni menangkap momen, keindahan, dan cerita melalui sebuah lensa kamera. 
+        <br>
+        <br>
+        Dari memotret saya dapat belajar banyak hal mulai dari melatih kita untuk focus apa yang ingin kita abadikan dan tidak akan pernah goyah dengan apa pun yang ada disekitar kita, di Photography juga kita dituntut untuk memilih – milih objek mana yang dirasa bagus dan layak untuk dijadikan sasaran empuk, dan juga harus memahami settingan mana yang dirasa pas dan tepat untuk suatu kondisi tertentu dengan media potret yang akan kita gunakan tidak semua tempat atau kondisi bisa setingannya sama, dengan itu kita harus selekti lagi dalam memilih - milih.
+        <br>
+        <br>
+        Photography bisa dibilang sebagai Passion saya, karena Passion sendiri adalah sesuatu yang di lakukan dengan semangat dan antusiasme dari dalam diri kita tanpa adanya paksaan dari orang lain dan benar – benar dari hati dan dengan hati.
+        <br>
+        <br>
+        <b>“Passion adalah tentang energi yang tak bisa ditukar dengan apapun, kecuali dengan kepuasan dan kebahagiaan eksistensial “</b>
+      </p>
+      <div class="photo">
+        <img src="ada/1.jpg">
+        <img src="ada/2.jpg">
+        <img src="ada/3.jpg">
+        <img src="ada/4.jpg">
+        <img src="ada/5.jpg">
+        <img src="ada/6.jpg">
+        <img src="ada/7.jpg">
+        <img src="ada/8.jpg">
+        <img src="ada/9.jpg">
+        <img src="ada/10.jpg">
+        <img src="ada/11.jpg">
+        <img src="ada/12.jpg">
+        <img src="ada/13.jpg">
+        <img src="ada/14.jpg">
+        <img src="ada/15.jpg">
+        <img src="ada/16.jpg">
+        <img src="ada/17.jpg">
+        <img src="ada/18.jpg">
+        <img src="ada/19.jpg">
+        <img src="ada/20.jpg">
+        <img src="ada/21.jpg">
+        <img src="ada/22.jpg">
+        <img src="ada/23.jpg">
+        <img src="ada/24.jpeg">
+      </div>
+    </section>
 
-            </div>
-        </section>
-        <section id="photo">
-          <h1>Photo</h1>
-            <div class="content">
-              <p>
-                <i> Photography </i> adalah salah satu hobi yang saya tekuni dan minati sampai saat ini, menurut saya <i> Photography </i> adalah suatu hal yang unik dan asik, <i> Photography </i> sendiri ialah merupakan kegaitan atau aktivitas mengambil gambar dari suatu objek yang dirasa bagus atau memiliki seninya tersendiri bagi para sang Photographer dengan melalui kamera untuk menghasilkan karya seni yang indah dan bisa dikonsumsi semua orang atau untuk pribadi. Dari memotret saya belajar banyak mulai dari melatih focus kita agar lebih focus kedepan dan tidak goyah dengan apa yang ada disekitar kita, dan di <i> Photography </i> juga kita dituntut untuk memilih – milih objek mana yang dirasa bagus dan layak, didalam <i> Photography </i> kita juga harus memahami setting mana yang tepat untuk suatu kondisi tertentu dengan media potret yang akan kita gunakan tidak semua tempat atau kondisi bisa setingannya sama, dengan itu kita harus selekti lagi dalam memilih -  milih.
-                  <br>
-                  <br>
-                    <span>Pengertian Photography </span>
-                  <br>
-              -	"Menurut KBBI /fo•to•gra•fi/ n seni dan penghasilan gambar dan cahaya pada film atau permukaan yang dipekakan"
-              <br>
-              -	“Menurut Wikipedia Photography (bahasa Inggris: <i> Photography </i>, yang berasal dari kata Yunani yaitu "phos": cahaya dan "graphien": melukis/menulis) adalah proses melukis/menulis dengan menggunakan media cahaya.[1] Sebagai istilah umum, Photography berarti proses atau metode untuk menghasilkan gambar atau foto dari suatu objek dengan merekam pantulan cahaya yang mengenai objek tersebut pada media yang peka cahaya. Alat paling populer untuk menangkap cahaya ini adalah kamera. Tanpa cahaya, tidak ada foto yang bisa dibuat.
-              
-              <br>
-              Prinsip <i> Photography </i> adalah memfokuskan cahaya dengan bantuan pembiasan sehingga mampu membakar medium penangkap cahaya. Medium yang telah dibakar dengan ukuran luminitas cahaya yang tepat akan menghasilkan bayangan identik dengan cahaya yang memasuki medium pembiasan (selanjutnya disebut lensa).
-              <br>
-              <br>
-                <span>Jenis - Jenis Photography </span> 
-              <br>
-              Berikut adalah beberapa jenis Photography yang umum:
-              <br>
-              1.	<span>Potret</span>: Photography potret berfokus pada pengambilan gambar wajah manusia. Ini bisa meliputi potret individu, potret keluarga, potret pernikahan, dan sebagainya.
-              <br>
-              2.	<span>Landscape</span>: Photography landscape melibatkan pengambilan gambar pemandangan alam yang luas. Biasanya ini mencakup gunung, pantai, danau, hutan, dan sejenisnya. Tujuan utamanya adalah untuk menangkap keindahan alam.
-              <br>
-              3.	<span>Street</span>: Photography street berfokus pada pengambilan gambar kehidupan sehari-hari di jalan. Fotografer street mencoba menangkap momen yang tidak diatur di lingkungan perkotaan, seperti orang-orang, bangunan, gerakan, dan kehidupan kota secara umum.
-              <br>
-              4.	<span>Fashion</span>: Photography fashion berkaitan dengan pemotretan pakaian, aksesori, dan model. Ini biasanya digunakan untuk tujuan periklanan, editorial, atau dalam industri mode secara umum.
-              <br>
-              5.	<span>Macro</span>: Photography macro berfokus pada pemotretan objek dalam skala yang sangat besar. Fotografer macro menggunakan lensa khusus untuk mendapatkan detail terperinci dari objek kecil, seperti serangga, bunga, atau objek kecil lainnya.
-              <br>
-              6.	<span>Documentary</span>: Photography dokumenter melibatkan pengambilan gambar yang bermaksud untuk mendokumentasikan kehidupan sehari-hari, peristiwa penting, atau isu sosial. Tujuannya adalah untuk menyampaikan pesan atau cerita melalui gambar.
-              <br>
-              7.	<span>Sports</span>: Photography olahraga berkaitan dengan pemotretan kegiatan olahraga dan aksi atlet. Fotografer olahraga mencoba menangkap momen-momen penting dan gerakan yang cepat dalam olahraga.              
-              <br>
-              <br>
-                <span>Teknik Dasar Photography</span>
-              <br>
-              Berikut adalah beberapa teknik dasar dalam Photography:
-              <br>
-              1.	<span> Pencahayaan </span>: Memahami pencahayaan adalah kunci utama dalam dunia Photography. Anda perlu memahami bagaimana cahaya mempengaruhi hasil foto. Terdapat dua jenis pencahayaan utama: pencahayaan alami (misalnya sinar matahari) dan pencahayaan buatan (misalnya lampu kilat). Eksperimen dengan pencahayaan yang berbeda, seperti cahaya datang dari berbagai arah atau menggunakan pencahayaan lembut versus keras, untuk menciptakan efek yang berbeda dalam foto Anda.
-              <br>
-              2.	<span> Fokus </span> : Memiliki fokus yang tepat dalam foto adalah penting. Anda dapat menggunakan fokus otomatis pada kamera Anda untuk mengunci fokus pada objek utama, atau menggunakan fokus manual untuk lebih banyak kontrol. Pastikan objek utama Anda tajam dan jelas agar mengahislkan gambar yang bagus.
-              <br>
-              3.	<span> Angel </span> : Angel atau Sudut Pandang: yaitu kita harus mendapatkan gambar dari sudut pandang yang berbeda cobalah untuk bergerak dan mencoba sudut pandang yang berbeda untuk mengambil foto. Terkadang mengubah sudut pengambilan gambar dapat memberikan perspektif yang menarik dan unik. Misalnya, cobalah mengambil foto dari posisi rendah (low angle) atau dari atas (high angle) untuk melihat objek dari sudut pandang yang berbeda.
-              <br>
-              4.	<span> Kestabilan </span>: Maksudnya adalah saat kita akan melakukan pemotretan usahakan kamera digoyang untuk menjaga kualitas hasil gambar yang dihasilkan dan juga disarankan menggunakan tripod agar kualitas gambar tidak buruk atau goyang.
-              <br>
-              <br>              
-              Berikut ini beberapa Poto yang saya abadikan
-            </p>
-          </div>
-          <div class="photo">
-            <img src="img/candi.jpg">
-            <img src="img/masjid malay.jpg">
-            <img src="img/klcc.jpg">
-            <img src="img/flyover.jpg">
-            <img src="img/ubd.jpg">
-            <img src="img/mess unisel.jpg">
-            <img src="img/udara.jpg">
-            <img src="img/tm.jpg">
-            <img src="img/kai.jpg">
-            <img src="img/cfe.jpg">
-            <img src="img/arista.jpg">
-            <img src="img/jkw.jpg">
-            <img src="img/solo blpn.jpg">
-            <img src="img/krt solo.jpg">
-            <img src="img/lrt.jpg">
-            <img src="img/smpn4.jpg">
-            <img src="img/msj.jpg">
-            <img src="img/angkot.jpg">
-          </div>
-        </section>
-      </content>
-    <!-- AKHIR CONTENT -->
-    <!-- AWAL FOOTER -->
-      <footer>
-        <div class="footer">
-          <p> &copy; 2023 GILANG RAMANDA PURBA</p>
-        </div>
-      </footer>
-    <!-- AKHIR FOOTER -->
-    <script src="main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
