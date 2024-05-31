@@ -16,7 +16,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: black
 }
 
 
@@ -325,6 +325,22 @@ section {
 
 #experience {
   position: relative;
+  margin: 0%, 0%;
+}
+
+#experience p {
+  color: #fff;
+}
+
+#experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(ada/x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 .experience-sub-title {
@@ -456,7 +472,7 @@ article .icon {
 /*Timwline*/
 
 .contents {
-  padding: 0px 30px;
+  padding: 0px 100px;
 }
 
 .contents .box {
@@ -501,3 +517,4 @@ article .icon {
   transform: scale(1.03);
   flex: 5;
 }
+
