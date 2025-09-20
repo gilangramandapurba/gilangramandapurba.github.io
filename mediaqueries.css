@@ -5,12 +5,14 @@
   }
   .about-containers {
     flex-wrap: wrap;
+    font-size: 1rem;
   }
   #contact,
   #projects {
     height: fit-content;
   }
 }
+
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
