@@ -7,6 +7,119 @@
   padding: 0;
 }
 
+    /* SPLASH SCREEN */
+    .splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, #020202, #000 80%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      flex-direction: column;
+      overflow: hidden;
+      transition: opacity 1s ease;
+    }
+
+    /* WRAPPER UNTUK ASTRONOT */
+    .astronauts {
+      display: flex;
+      gap: 20px;
+      align-items: flex-end;
+    }
+
+    .astronaut {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: float 3s ease-in-out infinite;
+      transform-origin: bottom center;
+      position: relative;
+    }
+
+    .astronaut img {
+      width: 350px;
+      animation: waveHand 1s infinite alternate ease-in-out;
+    }
+
+    .astronaut.center img {
+      width: 480px;
+    }
+
+    /* ANIMASI NAIK TURUN */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    /* ANIMASI TANGAN MELAMBAI (SIMULASI ROTASI KECIL) */
+    @keyframes waveHand {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(10deg); }
+    }
+
+    /* ANIMASI TERBANG KE ATAS */
+    .fly-away {
+      animation: flyUp 1.5s ease forwards;
+    }
+
+    @keyframes flyUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-150vh) scale(0.8); opacity: 0; }
+    }
+
+  .rocket-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 1s ease, opacity 1s ease;
+    z-index: 1000;
+    display: none;
+    text-align: center;
+  }
+
+  /* Rotasi hanya emoji roket */
+  .rocket-emoji {
+    display: block;
+    transform: rotate(-45deg);
+  }
+
+  /* Animasi roket terbang */
+  .rocket-fly {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+
+  /* Api tetap lurus */
+  .rocket-flame {
+    position: absolute;
+    bottom: -15px;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 25px;
+    background: linear-gradient(to bottom, yellow, orange, red);
+    border-radius: 50%;
+    opacity: 0;
+    filter: blur(1px);
+    animation: flicker 0.15s infinite alternate;
+  }
+
+  .flame-active {
+    opacity: 1;
+  }
+
+  @keyframes flicker {
+    0% { transform: translateX(-50%) scaleY(1); opacity: 0.7; }
+    100% { transform: translateX(-50%) scaleY(1.3); opacity: 1; }
+  }
+
+
 body {
   font-family: "Outfit", sans-serif;
 }
@@ -16,27 +129,33 @@ html {
 }
 
 p {
-  color: black
+  color: #000000;
+  font-style: bold;
 }
-
 
 .foto {
   text-align: center;
   justify-content: center;
 }
 
-/* TRANSITION */
 
+/* TRANSITION */
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
+      justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(ada/bg3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -46,13 +165,13 @@ nav {
 }
 
 .nav-links {
-  gap: 2rem;
+  gap: 10px;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: large;
 }
 
 a {
-  color: black;
+  color: #302c2c;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -65,7 +184,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: large;
 }
 
 .logo:hover {
@@ -95,7 +214,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: #302c2c;
   transition: all 0.3 ease-in-out;
 }
 
@@ -115,7 +234,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: #302c2c;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -152,6 +271,8 @@ a:hover {
   transform: none;
 }
 
+
+/* span */
 /* SECTIONS */
 
 section {
@@ -201,10 +322,14 @@ section {
   margin-bottom: 1rem;
 }
 
-.title {
-  font-size: 3rem;
+#edu {
+  font-size: large;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+
 }
+
 
 #socials-container {
   display: flex;
@@ -215,7 +340,7 @@ section {
 
 /* ICONS */
 
-.icon {
+#icon {
   cursor: pointer;
   height: 2rem;
 }
@@ -270,6 +395,23 @@ section {
 
 /* ABOUT SECTION */
 
+.garis1 {
+  width: 25%;
+  height: 2%;
+  background-image: linear-gradient(to top, #f7971e, #fba516, #feb40d, #ffc304, #ffd200);
+  justify-content: center;
+  align-items: center;
+}
+
+.garis {
+  width: 25%;
+  height: 2%;
+  background-image: linear-gradient(to top, #f7971e, #fba516, #feb40d, #ffc304, #ffd200);
+  justify-content: center;
+  align-items: center;
+  margin-left: 37%;
+}
+
 #about {
   position: relative;
 }
@@ -321,40 +463,168 @@ section {
   margin: auto 0;
 }
 
+/*education*/
+
+#education{
+    justify-content: center;
+    align-items: center;
+    background-image: url(ada/tr\ \(5\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chart {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      align-items: flex-end;
+      gap: 50px;
+      padding-bottom: 0%; 
+           
+    }
+
+    .bar {
+      width: 85px;
+      background: #ADA996;
+      border-radius: 6px 6px 0 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    .bar img {
+      position: absolute;
+      bottom: 5px;
+      width: 80%;
+      height: auto;
+      opacity: 0.9;
+    }
+
+    .bar span {
+      color: white;
+      padding: 5px;
+      font-size: 14px;
+      z-index: 2;
+      font-weight: bold;
+    }
+
+    /* Tinggi tiap jenjang */
+    .sd { height: 110px; }
+    .smp { height: 150px; }
+    .sma { height: 260px; }
+    .s1 { height: 340px; }
+
+    /* Label di bawah bar */
+    .label {
+      text-align: center;
+      margin-top: 8px;
+      font-weight: bold;
+      font-size: small;
+    }
+
+    .item {
+      text-align: center;
+    }
+
+    /* Responsif */
+    @media screen and (max-width: 600px) {
+      .bar {
+        width: 40px;
+      }
+      .bar span {
+        font-size: 12px;
+      }
+      .bar img {
+        width: 80%;
+      }
+    }
+
+
+
+
+
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      max-height: 100vh;
+      overflow: hidden;
+      display: flex;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      background: #fff;
+    }
+
+    .slideshow-image {
+      display: none;
+      width: auto;
+      max-height: 100vh;
+      object-fit: contain;
+      margin-left: 8%;
+    }
+
+    .slideshow-image.active {
+      display: block;
+    }
+
+    /* Tombol navigasi */
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: white;
+      background: rgba(0,0,0,0.5);
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+      user-select: none;
+      transition: background 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background: rgba(0,0,0,0.7);
+    }
+
+    .nav-left {
+      left: 10px;
+    }
+
+    .nav-right {
+      right: 10px;
+    }
+
+    /* Responsif */
+    @media (max-width: 600px) {
+      .slideshow-image {
+        max-height: 70vh; /* pastikan tetap kelihatan semua di HP */
+      }
+      .nav-button {
+        font-size: 1.5rem;
+        padding: 8px 10px;
+      }
+    }
+    
+  
+    
 /* EXPERIENCE SECTION */
 
 #experience {
-  position: relative;
-  margin: 0%, 0%;
-}
-
-#experience p {
-  color: #fff;
-}
-
-#experience {
-  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: url(ada/x.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
+  color: #302c2c;
+      align-items: center;
+    background-image: url(ada/bg4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
 
 .article-container {
   display: flex;
@@ -396,11 +666,11 @@ article .icon {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #000000;
+  border: 2px solid #302c2c;
   border-radius: 50%;
   outline: 2px solid#fff;
-  font-size: 30px;
-  color: #000000;
+  font-size: 2rem;
+  color: #302c2c;
   text-decoration: none;
   z-index: 1;
   overflow: hidden;
@@ -409,7 +679,7 @@ article .icon {
 
 .social-menu a:hover {
   transform: scale(1.5);
-  color: #000;
+  color: #302c2c;
   outline-offset: 7px;
   outline-color: #1ecedb;
 }
@@ -456,17 +726,20 @@ article .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: url(ada/0.png);
+    height: 100vh;
+    background-image: url(ada/ba1.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
 #clock {
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: large;
   text-align: center;
   position: relative;
+  
 }
 
 /*Timwline*/
@@ -497,16 +770,17 @@ article .icon {
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #000000;
+  color: #302c2c;
 }
 
 .photo img {
   width: 300px;
   height: 300px;
   border: 2px solid #1ecedb;
-  border-radius: 13px;
+  border-radius: 10px;
+  margin: 2px;
+  margin-left: 30px;
   cursor: pointer;
-  margin: 10px;
   transition: 400ms;
   justify-content: center;
   align-items: center;
@@ -518,3 +792,14 @@ article .icon {
   flex: 5;
 }
 
+.about-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+.desain{
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    }
